@@ -1,0 +1,23 @@
+.patient-card{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.patient-img{
+    width: 48px;
+}
+.patient-info{
+    margin-left: 20px;
+}
+h3{
+    margin: 0;
+    font-size: 14px;
+}
+p{
+    margin-top: 2px;
+    font-size: 14px;
+    color: #707070;
+}
+.more{
+    margin-left: auto;
+}

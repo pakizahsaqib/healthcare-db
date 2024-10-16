@@ -1,0 +1,129 @@
+.dia-history{
+    max-width: 100%;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 20px;
+    color: #072635;
+    margin: 20px 0;
+  
+}
+.dia-graph{
+    padding: 20px;
+    background-color: #F4F0FE;
+    max-height: 278px;  
+    border-radius: 12px;
+   
+}
+.dia-container{
+    display: flex;
+}
+.bp-plot{
+    flex: 2 ;
+    margin-right: 25px ;
+}
+/* .bp-plot children*/
+.bp-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bp-data{
+    flex: 1;
+}
+/* .bp-data children*/
+.bp-systolic{
+    position: relative;
+}
+.bp-diastolic{
+    border-top: 1px solid #dedede;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 0 ;
+}
+.dia-name{
+    font-weight: bold;
+}
+span{
+    background-color: aqua;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.diagnostics{
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+.dia-1,
+.dia-2,
+.dia-3 {
+    width: 212px;
+    height: 212px;
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+}
+.dia-1{
+    background-color : #E0F3FA;
+}
+.dia-2{
+    background-color : #FFE6E9;
+}
+.dia-3{
+    background-color : #FFE6F1;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.dia-title{
+    font-size: 16px;
+}
+.dia-value{
+    margin: 2px 0 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.dia-tidbit{
+    margin-top: 30px;
+    font-size: 14px;
+}
+i{
+    margin-right: 10px;
+}
+h2{
+    margin-top: -4px;
+    font-size: 18px;
+}
+@media (max-width: 1024px) {
+    .bp-plot {
+        flex: 1;
+       
+    }
+    .bp-data{
+        flex: 1;
+    }
+}
+@media (max-width: 768px) {
+    .bp-plot {
+        flex: 1;
+        
+    }
+    .bp-data{
+        display: none;
+    }
+    .diagnostics {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .dia-1,
+    .dia-2,
+    .dia-3 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
